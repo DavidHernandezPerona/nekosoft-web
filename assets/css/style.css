@@ -1,6 +1,20 @@
+body {
+    color: #555555;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     color: #00B26B;
     font-size: 50px;
+}
+
+h2 {
+    color: #00B26B;
+}
+
+h3 {
+    color: #008F5A;
 }
 
 header {
@@ -25,8 +39,6 @@ nav a {
     color: #00B26B;
 }
 
-body {
-    color: #555555;
-    margin: 20px;
-    font-family: 'Montserrat', sans-serif;
+section {
+    margin-bottom: 50px;
 }
