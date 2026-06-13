@@ -81,6 +81,20 @@ section:hover {
     background-color: #fafafa;
 }
 
+.contenedor-proyectos {
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-proyectos article {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
 footer {
     text-align: center;
 }
