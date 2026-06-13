@@ -94,6 +94,52 @@ section:hover {
     border-radius: 15px;
 }
 
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form div {
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #00B26B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #008F5A;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #00B26B;
+}
 
 footer {
     text-align: center;
