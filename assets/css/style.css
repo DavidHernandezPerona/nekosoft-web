@@ -28,7 +28,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -139,6 +139,41 @@ input:focus,
 textarea:focus {
     outline: none;
     border: 1px solid #00B26B;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #00B26B;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.boton-principal:hover {
+    background-color: #008F5A;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+
+}
+
+.contenedor-proyectos article {
+    transition: 0.3s;
+}
+
+.contenedor-proyectos article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-proyectos article:hover .imagen-proyecto {
+    transform: scale(1.05);
 }
 
 footer {
