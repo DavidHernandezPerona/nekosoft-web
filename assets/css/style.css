@@ -1,4 +1,4 @@
-body {
+html {
     color: #555555;
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -224,4 +224,35 @@ textarea:focus {
 
 footer {
     text-align: center;
+}
+
+html.oscuro {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+html.oscuro section {
+    background-color: #2d2d2d;
+}
+
+html.oscuro .contenedor-servicios article,
+html.oscuro .contenedor-proyectos article {
+    background-color: #3a3a3a;
+}
+
+html.oscuro h1,
+html.oscuro h2,
+html.oscuro h3 {
+    color: #00d17d;
+}
+
+html.oscuro nav a {
+    color: #00d17d;
+}
+
+html.oscuro input,
+html.oscuro textarea {
+    background-color: #4a4a4a;
+    color: white;
+    border: 1px solid #666666;
 }

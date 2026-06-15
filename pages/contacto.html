@@ -3,6 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <script>
+        if (localStorage.getItem("modoOscuro") === "activado") {
+            document.documentElement.classList.add("oscuro");
+        }
+    </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +43,7 @@
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
+                <li><button id="modo-oscuro">🌙 Modo oscuro</button></li>
             </ul>
         </nav>
 
@@ -99,8 +106,8 @@
 
                 </form>
 
-                <adress>
-                    
+                <address>
+
                 <p>
                     Email:
                     <a href="mailto:info@nekosoft.com">info@nekosoft.com</a>
