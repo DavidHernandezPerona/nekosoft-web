@@ -4,6 +4,20 @@ if (localStorage.getItem("modoOscuro") === "activado") {
     document.documentElement.classList.add("oscuro");
 }
 
+function actualizarTextoModo() {
+
+    if (!botonModoOscuro) return;
+
+    if (document.documentElement.classList.contains("oscuro")) {
+        botonModoOscuro.textContent = "☀️ Modo claro";
+    } else {
+        botonModoOscuro.textContent = "🌙 Modo oscuro";
+    }
+
+}
+
+actualizarTextoModo();
+
 if (botonModoOscuro) {
     botonModoOscuro.addEventListener("click", function() {
 
@@ -15,8 +29,11 @@ if (botonModoOscuro) {
             localStorage.setItem("modoOscuro", "desactivado");
         }
 
+        actualizarTextoModo();
+
     });
 }
+
 
 const formulario = document.getElementById("formulario-contacto");
 
@@ -50,6 +67,7 @@ if (formulario) {
     });
 
     formulario.addEventListener("submit", function(event) {
+
         event.preventDefault();
 
         errorNombre.textContent = "";
@@ -82,6 +100,7 @@ if (formulario) {
 
             contador.textContent = "0 / 500 caracteres";
         }
+
     });
 
 }

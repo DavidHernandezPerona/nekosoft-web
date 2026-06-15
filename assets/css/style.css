@@ -256,3 +256,31 @@ html.oscuro textarea {
     color: white;
     border: 1px solid #666666;
 }
+
+#logo-oscuro {
+    display: none;
+}
+
+html.oscuro #logo-claro {
+    display: none;
+}
+
+html.oscuro #logo-oscuro {
+    display: inline;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: aparecer 0.8s ease;
+}
