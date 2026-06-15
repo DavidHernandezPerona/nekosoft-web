@@ -152,6 +152,20 @@ textarea:focus {
     border: 1px solid #00B26B;
 }
 
+#error-nombre,
+#error-email,
+#error-mensaje {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 .boton-principal {
     display: inline-block;
     background-color: #00B26B;
