@@ -1,9 +1,5 @@
 const botonModoOscuro = document.getElementById("modo-oscuro");
 
-if (localStorage.getItem("modoOscuro") === "activado") {
-    document.documentElement.classList.add("oscuro");
-}
-
 function actualizarTextoModo() {
 
     if (!botonModoOscuro) return;
